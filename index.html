@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NinjaShield • Cyber Security</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="matrix"></canvas>
+<div class="app">
+  <header>
+    <div>
+      <div class="eyebrow">DEFENSIVE SECURITY PLATFORM</div>
+      <h1>Ninja<span>Shield</span></h1>
+      <p>Security scanner untuk project milik sendiri.</p>
+    </div>
+    <div class="status"><i></i> SYSTEM ONLINE</div>
+  </header>
+
+  <main>
+    <section class="hero card">
+      <div>
+        <h2>Protect your project.</h2>
+        <p>Pilih file HTML, JS, CSS, JSON, atau TXT untuk pemeriksaan pola keamanan secara lokal di browser.</p>
+      </div>
+      <label class="upload">
+        <input id="fileInput" type="file" multiple accept=".html,.htm,.js,.css,.json,.txt">
+        <span>＋ SELECT PROJECT FILES</span>
+      </label>
+    </section>
+
+    <section class="stats">
+      <div class="card stat"><b id="score">100</b><small>SECURITY SCORE</small></div>
+      <div class="card stat"><b id="files">0</b><small>FILES SCANNED</small></div>
+      <div class="card stat"><b id="findings">0</b><small>FINDINGS</small></div>
+    </section>
+
+    <section class="card findings">
+      <div class="section-head"><h2>Security Findings</h2><button id="clear">CLEAR</button></div>
+      <div id="results" class="empty">Belum ada scan. Pilih file untuk memulai.</div>
+    </section>
+
+    <section class="card">
+      <div class="section-head"><h2>Scanner Rules</h2></div>
+      <div class="rules">
+        <span>DOM XSS patterns</span><span>Dangerous eval usage</span>
+        <span>Hard-coded secrets</span><span>Insecure HTTP URLs</span>
+        <span>Weak password patterns</span><span>Debug exposure</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>🛡️ NinjaShield Defensive Lab</span>
+    <span>DEVELOPER Zakss • DEVELOPER DAKA • DEVELOPER NATHAN</span>
+  </footer>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
